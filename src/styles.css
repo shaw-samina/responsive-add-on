@@ -41,6 +41,36 @@ header a {
   border-radius: 3px;
   display: inline-block;
 }
+.more-info-article {
+  color: white;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  color: white;
+  opacity: 0.7;
+  background-image: linear-gradient(rgba(36, 39, 35, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/madmen.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section {
+  padding-top: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+.grid-box {
+  padding-left: 40px;
+}
 
 @media (max-width: 800px) {
   header {
