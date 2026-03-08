@@ -47,14 +47,8 @@ main a {
   display: inline-block;
 }
 
-.more-info-article {
+main h2 {
   color: white;
-}
-
-footer ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 footer {
@@ -67,33 +61,39 @@ footer {
   background-size: cover;
 }
 
-section {
-  /*padding-top: 50px;
-  max-width: 100%;*/
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 100px 0;
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
+.more-info-article {
+  color: white;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
   justify-content: space-around;
   grid-gap: 20px;
+  padding: 60px;
 }
 .grid-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   color: white;
-  padding: 20px;
-  grid-gap: 23px;
 }
 .the-wire {
   max-width: 100%;
   height: auto;
   display: block;
-
   filter: sepia(70%) brightness(82%) contrast(90%);
 }
+.wire-sec-impt {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
 .grid-2 {
   color: white;
   background-color: #1e1b2c;
@@ -109,6 +109,8 @@ section {
 .grid-3 h2,
 h3 {
   margin-bottom: 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .grid-3 h2,
@@ -121,20 +123,29 @@ p {
 .grid-3 p {
   color: rgb(61, 49, 49, 0.7);
 }
+.bb-paragraph {
+  font-size: 0.25;
+}
 
 .bb-review {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  text-decoration: none;
+  font-size: 15px;
+  display: inline-block;
+  text-transform: lowercase;
+}
+.bb-review:hover {
+  color: black;
+  font-size: 18px;
 }
 
-.why-important {
-  padding-top: 100px;
+.my-fav-shows {
+  text-align: center;
 }
+
 .sopranos,
 .breaking-bad {
   max-width: 100%;
-
-  display: inline-block;
+  height: auto;
+  display: block;
   filter: sepia(25%) brightness(76%);
 }
 .card {
@@ -155,7 +166,19 @@ p {
   margin: 20px;
 }
 
-/* */
+.background-color-purple {
+  background-color: #1e1b2c;
+}
+
+.bottom-grid {
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0px;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
 
 @media (max-width: 900px) {
   header {
@@ -170,9 +193,7 @@ p {
   header h4 {
     font-size: 10px;
   }
-  .why-important {
-    padding-top: 10px;
-  }
+
   header a,
   main a {
     font-size: 10px;
