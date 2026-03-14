@@ -74,7 +74,7 @@ footer ul {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
   justify-content: space-around;
-  grid-gap: 20px;
+  grid-gap: 15px;
   padding: 60px;
 }
 .grid-1 {
@@ -103,7 +103,6 @@ footer ul {
 }
 .grid-3 {
   grid-template-columns: 1fr 1fr 1fr;
-  line-height: 1.5;
 }
 
 .grid-3 h2,
@@ -112,7 +111,6 @@ h3 {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .grid-3 h2,
 h3,
 p {
@@ -139,6 +137,7 @@ p {
 
 .my-fav-shows {
   text-align: center;
+  padding: 10px;
 }
 
 .sopranos,
@@ -153,34 +152,106 @@ p {
   background-color: white;
   line-height: 1.5;
   margin-top: 20px;
+  max-width: 100%;
 }
 
-.video-btn {
-  color: white;
+.learn-more {
+  /*color: white;
   background-color: #fb5c8d;
   font-size: 13px;
   text-align: center;
   width: 240px;
   height: 25px;
   padding: 10px;
-  margin: 20px;
+  margin: 20px;*/
+
+  opacity: 1;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  border-radius: 5px;
+  background: #fb5c8d;
+}
+.watch-clip {
+  display: block;
+  margin: 20px auto;
+  width: fit-content;
+  opacity: 1;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  border-radius: 5px;
+  background: #fb5c8d;
+  text-align: center;
 }
 
 .background-color-purple {
+  max-width: 100%;
   background-color: #1e1b2c;
+  padding-top: 20px;
 }
 
 .bottom-grid {
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 0px;
+  padding: 0;
+  max-width: 100%;
+  row-gap: 2px;
 }
 
+.clips {
+  aspect-ratio: 1/1;
+  opacity: 1;
+  border-radius: 15px;
+}
+
+.card-header {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 .embed {
   width: 100%;
-  aspect-ratio: 1/1;
+  aspect-ratio: 10/9;
+  border-radius: 10px;
+}
+
+h5 {
+  color: #fb5c8d;
+  letter-spacing: 3px;
+  font-weight: 200;
+  opacity: 1;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 16px;
+  gap: 10px;
+  border-left-width: 5px;
+  border-left: 5px solid #fb5c8d;
+}
+.pink-subtext {
+  color: #fb5c8d;
+  letter-spacing: 3px;
+  font-weight: 200;
+  opacity: 1;
+  padding-top: 15px;
+  padding-bottom: 2px;
+  padding-left: 16px;
+  gap: 10px;
+  border-left-width: 5px;
+
+  border-top-left-radius: 5px solid #ff66a1;
+  width: fit-content;
+  margin: 0 auto 20px auto;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
 @media (max-width: 900px) {
+  body {
+    padding-left: 5px;
+  }
+
   header {
     padding: 70px;
   }
@@ -203,5 +274,14 @@ p {
     color: rgb(90, 46, 46);
     background-color: white;
     padding: 5px 10px;
+  }
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+  .bottom-grid {
+    grid-template-columns: 1fr;
+  }
+  .grid {
+    grid-template-columns: 1fr;
   }
 }
