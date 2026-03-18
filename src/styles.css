@@ -201,7 +201,6 @@ p {
 }
 
 .clips {
-  aspect-ratio: 1/1;
   opacity: 1;
   border-radius: 15px;
 }
@@ -213,7 +212,7 @@ p {
 }
 .embed {
   width: 100%;
-  aspect-ratio: 10/9;
+  aspect-ratio: 16/9;
   border-radius: 10px;
 }
 
@@ -234,12 +233,9 @@ h5 {
   letter-spacing: 3px;
   font-weight: 200;
   opacity: 1;
-  padding-top: 15px;
-  padding-bottom: 2px;
   padding-left: 16px;
   gap: 10px;
   border-left-width: 5px;
-
   border-top-left-radius: 5px solid #ff66a1;
   width: fit-content;
   margin: 0 auto 20px auto;
